@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>Microservices</title>
+
+  
+  <meta name="author" content="Arvin">
+  
+
+  <meta name="description" content="Spring Boot with Spring Cloud">
+
+  
+
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="Arvin's Blog" href="http://localhost:4000/feed.xml">
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Arvin's Blog">
+  <meta property="og:title" content="Microservices">
+  <meta property="og:description" content="Spring Boot with Spring Cloud">
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/img/IMG_1482.JPG">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Arvin">
+  <meta property="og:article:published_time" content="2022-04-24T00:00:00+08:00">
+  <meta property="og:url" content="http://localhost:4000/2022-04-24-microservices/">
+  <link rel="canonical" href="http://localhost:4000/2022-04-24-microservices/">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Microservices">
+  <meta property="twitter:description" content="Spring Boot with Spring Cloud">
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/IMG_1482.JPG">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">Arvin's Blog</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto"></ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="http://localhost:4000/">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/arvin.jpg" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+  <div id="header-big-imgs" data-num-img=1
+    
+    
+    
+      
+      data-img-src-1="http://localhost:4000/assets/img/IMG_1615.JPG"
+    
+    
+    
+  ></div>
+
+
+<header class="header-section has-img">
+
+<div class="big-img intro-header">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>Microservices</h1>
+          
+            
+              <h2 class="post-subheading">Spring Boot with Spring Cloud</h2>
+            
+          
+
+          
+            <span class="post-meta">Posted on April 24, 2022</span>
+            
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class='img-desc'></span>
+</div>
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>Microservices</h1>
+          
+            
+              <h2 class="post-subheading">Spring Boot with Spring Cloud</h2>
+            
+          
+
+          
+            <span class="post-meta">Posted on April 24, 2022</span>
+            
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+
+      
+        
+        
+        
+
+        <div id="header-gh-btns">
+          
+            
+              
+                  <iframe src="https://ghbtns.com/github-btn.html?user=ittarvin&repo=micro-services&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                
+            
+              
+                  <iframe src="https://ghbtns.com/github-btn.html?user=ittarvin&repo=micro-services&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                
+            
+              
+                  <iframe src="https://ghbtns.com/github-btn.html?user=ittarvin&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
+              
+            
+          
+        </div>
+      
+
+      
+
+      <article role="main" class="blog-post">
+        <p>This is a proof-of-concept application which demonstrates Microservices Architecture Pattern use Spring Boot and Spring Cloud.</p>
+
+<h3 id="微服务架构体系">微服务架构体系</h3>
+<h4 id="1架构图及技术栈">1.架构图及技术栈</h4>
+<p><img src="/assets/img/微服务架构图.png" alt="微服务架构图.png" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>中间件</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nginx</td>
+    </tr>
+    <tr>
+      <td>Spring Cloud Gateway</td>
+    </tr>
+    <tr>
+      <td>NetFlix Eureka</td>
+    </tr>
+    <tr>
+      <td>携程 Apollo</td>
+    </tr>
+    <tr>
+      <td>Spring Boot</td>
+    </tr>
+    <tr>
+      <td>Alibaba Druid</td>
+    </tr>
+    <tr>
+      <td>Mysql</td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="2微服务介绍">2.微服务介绍</h4>
+<h5 id="21项目代码管理目录结构">2.1.项目代码管理目录结构</h5>
+<p><img src="/assets/img/59145CF4-D2FF-49ff-84F2-3AC4C76695E3.png" alt="" /></p>
+
+<blockquote>
+  <p>项目采用Maven进行项目代码管理。</p>
+</blockquote>
+
+<h6 id="211代码结构介绍">2.1.1.代码结构介绍</h6>
+
+<ul>
+  <li>zjcw-gateway
+    <blockquote>
+      <p>服务网关服务</p>
+    </blockquote>
+  </li>
+  <li>zjcw-${占位符}-micro-services
+    <blockquote>
+      <p>按模块划分的微服务</p>
+    </blockquote>
+  </li>
+  <li>zjcw-notifcation
+    <blockquote>
+      <p>通知服务（短信，钉钉，推送等）</p>
+    </blockquote>
+  </li>
+  <li>zjcw-statistics
+    <blockquote>
+      <p>定时任务执行服务</p>
+    </blockquote>
+  </li>
+  <li>zjcw-oauth（待定）
+    <blockquote>
+      <p>微服务的安全体系</p>
+    </blockquote>
+  </li>
+  <li>zjcw-plugin
+    <blockquote>
+      <p>插件管理</p>
+    </blockquote>
+  </li>
+  <li>zjcw-utils
+    <blockquote>
+      <p>公共工具类</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h5 id="3服务网关gateway">3.服务网关（Gateway）</h5>
+<blockquote>
+  <p>Gateway 作为更底层的微服务网关，通常是作为外部 Nginx 网关和内部微服务系统之间的桥梁，起了这么一个承上启下的作用。</p>
+</blockquote>
+
+<h6 id="31简介">3.1.简介</h6>
+<blockquote>
+  <p>网关服务基于Spring Cloud Gateway 实现。实现功能包括 请求路由，服务负载，请求降级等。（<a href="https://spring.io/projects/spring-cloud-gateway">文档</a>）</p>
+</blockquote>
+
+<h6 id="312扩展">3.1.2.扩展</h6>
+<ul>
+  <li>实现基于Apollo的路由动态配置更新 。</li>
+  <li>集成车旺链路追踪（Zipkin）。</li>
+</ul>
+
+<h5 id="4业务微服务zjcw--micro-services">4.业务微服务（zjcw-${}-micro-services）</h5>
+<h6 id="41微服务应用分层">4.1.微服务应用分层</h6>
+<p><img src="/assets/img/Spring应用分层.png" alt="" /></p>
+<blockquote>
+  <p><strong>Controler</strong> 业务请求控制层【不包括业务逻辑】
+<strong>Service</strong>  服务层【与 domain 共同实现业务逻辑，主要担任 domain 层的业务协调工作】
+<strong>Domain</strong> 层负责关键业务计算
+<strong>Proxy</strong> 服务代理与其他服务的交互（如：Fegin Client）
+<strong>DAO</strong> 数据库持久层（Mybatis）</p>
+</blockquote>
+
+<h6 id="42微服务应用测试">4.2.微服务应用测试</h6>
+
+<h6 id="421测试覆盖原则">4.2.1.测试覆盖原则</h6>
+
+<p><img src="/assets/img/测试金字塔.png" alt="" /></p>
+
+<ul>
+  <li>单元测试（UT）
+<img src="/assets/img/单元测试.png" alt="" />
+    <blockquote>
+      <p>使用技术：Junit，Spring Mock MVC，<a href="https://site.mockito.org">Mpckito</a></p>
+    </blockquote>
+  </li>
+  <li>集成测试（IT）
+<img src="/assets/img/集成测试.png" alt="" />
+    <blockquote>
+      <p>主要针对外部依赖进行测试。</p>
+    </blockquote>
+  </li>
+  <li>组件测试（CT）
+<img src="/assets/img/组件测试.png" alt="" />
+    <blockquote>
+      <p>内部 Mock <strong>AND</strong> 外部 Mock
+ 内部：Spring MockBean，外部工具 <a href="http://wiremock.org">WireMock</a>
+ 外部： <a href="https://hoverfly.io">hoverfly</a>
+ 将外部依赖进行 Mock</p>
+    </blockquote>
+  </li>
+  <li>端到端（End-to-End Test）
+    <blockquote>
+      <p>API 测试工具 <a href="http://rest-assured.io">Rest-assured</a></p>
+    </blockquote>
+  </li>
+  <li>契约测试（不推荐）
+    <blockquote>
+      <p>国内应用较少</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h6 id="422测试收益">4.2.2.测试收益</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>分类</th>
+      <th>功能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>单元测试</td>
+      <td>保证类，模块功能的正常</td>
+    </tr>
+    <tr>
+      <td>集成测试</td>
+      <td>确保组件之间接口，交互，链路的正常</td>
+    </tr>
+    <tr>
+      <td>组件测试</td>
+      <td>确保服务作为独立整体，接口的功能正常</td>
+    </tr>
+    <tr>
+      <td>端到端测试</td>
+      <td>确保整个引用满足用户的需求</td>
+    </tr>
+    <tr>
+      <td>契约测试（不推荐）</td>
+      <td>确保服务提供方和消费放都遵守契约规范（成本较高）</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </article>
+
+      
+        <div class="blog-tags">
+          <span>Tags:</span>
+          
+            <a href="/tags#Spring Cloud">Spring Cloud</a>
+          
+        </div>
+      
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+
+  
+
+  
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2022-04-24-microservices%2F"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+  
+
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pagination blog-pager">
+        
+        <li class="page-item previous">
+          <a class="page-link" href="/2022-04-20-welcome-to-arvin's-blog/" data-toggle="tooltip" data-placement="top" title="Welcome To Arvin's Blog">&larr; Previous Post</a>
+        </li>
+        
+        
+      </ul>
+      
+  
+  
+  
+
+  
+
+
+  
+
+  
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="mailto:wangpfitta@163.com" title="Email me">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email me</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/ittarvin" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Arvin
+        &nbsp;&bull;&nbsp;
+      
+      2022
+
+      
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="http://localhost:4000/">wiki.ittarvin.cn</a>
+        </span>
+      
+
+      
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://wiki.ittarvin.cn">Arvin</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

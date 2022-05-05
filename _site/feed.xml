@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>Arvin's Blog</title>
+    
+    
+    <description>若无必要，勿增实体（Non sunt multiplicanda entia sine necessitate）</description>
+    
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Microservices</title>
+        <description>
+          Spring Boot with Spring Cloud - 
+          This is a proof-of-concept application which demonstrates Microservices Architecture Pattern use Spring Boot and Spring Cloud. 微服务架构体系 1.架构图及技术栈 中间件 Nginx Spring Cloud Gateway NetFlix Eureka 携程 Apollo Spring Boot Alibaba Druid Mysql   2.微服务介绍 2.1.项目代码管理目录结构 项目采用Maven进行项目代码管理。 2.1.1.代码结构介绍 zjcw-gateway 服务网关服务 zjcw-${占位符}-micro-services 按模块划分的微服务 zjcw-notifcation 通知服务（短信，钉钉，推送等） zjcw-statistics 定时任务执行服务 zjcw-oauth（待定） 微服务的安全体系 zjcw-plugin 插件管理 zjcw-utils...
+        </description>
+        <pubDate>Sun, 24 Apr 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022-04-24-microservices/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-04-24-microservices/</guid>
+      </item>
+    
+      <item>
+        <title>Welcome To Arvin's Blog</title>
+        <description>
+          
+          生活中充满诸多的不确定的事物，唯有通过不断的学习，来对冲掉那些不确定性带来的焦虑。
+
+早几年前就萌生了开始个人博客的想法，无奈各种原因（不知道怎么写，没时间 ，工作太累，balaba…..）放弃了！可以不写也没轻松多少。 
+我自己有一个习惯就是在得到APP上“扫”知识的习惯，这种感觉就像：假设自己一个猎手代理一杆机枪出门打猎，遇到一片老林，提枪就是扫射，
+扫完也许会蹦出几只蚂蚱，青蛙，或者其他什么东西，也许不会，然后继续走，继续扫……。弱弱地问一句：那么打猎的目的是什么？
+工具是否趁手？远距离点射可否？近身搏杀可否？不断的探索才能接近那个答案。
+OutPut
+
+  ……
+
+
+Current Job
+
+  车后服务部-微服务设计及监控系统搭建工作（2022/04，至今）。
+运力部门-研发主管（2021/09，2022/03）。
+保险创新（代理人）研发组-研发主管。（2019，2021）。
+保险风控部门-研发工程师（2018）。
+
+
+Work Experience
+
+
+  Senior Java Developer
+研发主管（Java软件工程师）
+2011年～至今  
+Education 
+北京邮电大学 - 计算机信息管理 (在考)
+北京理工大学 - 计算机科学与技术    
+Service Company
+中交兴路（2018年～至今）【风控，保险，运力，车后服务部】
+社区半径【智能社区】
+..…
+Able to
+Spring Cloud 微服务架构设计及开发。
+..…
+
+
+        </description>
+        <pubDate>Wed, 20 Apr 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022-04-20-welcome-to-arvin's-blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-04-20-welcome-to-arvin's-blog/</guid>
+      </item>
+    
+  </channel>
+</rss>
